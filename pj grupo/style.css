@@ -1,0 +1,10 @@
+.endereco{
+    display: none;
+}
+#cepe{
+    display: flex;
+    width: 200px;
+}
+.listg{
+    display: none;
+}
