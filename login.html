@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Bootsrap 4 CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Fontawesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!--Custom styles-->
+    <link rel="stylesheet" type="text/css" href="css/teste.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="header">
+        <!--Content before waves-->
+        <div class="inner-header flex">
+            <!--Just the logo.. Don't mind this-->
+            <div class="container" id="containerLogin">
+                <div class="d-flex justify-content-center h-100">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Fazer Login</h3>
+                        </div>
+                        <div class="card-body">
+                            <form name="form1">
+                                <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="E-mail" id="email_login">
+                                </div>
+                                <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                    </div>
+                                    <input type="password" class="form-control" placeholder="Senha" id="senha_login">
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" value="Entrar" class="btn float-right login_btn" id="botaoEntrar">Entrar</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-center links">
+                                <p>Não tem uma conta? <a id="botaoCriar2" href="#">Criar</a></p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a id="botaoRecuperar" href="#">Esqueci minha senha</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container2" id="containerSenha">
+                <div class="d-flex justify-content-center h-100">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Recuperar Senha</h3>
+                        </div>
+                        <div class="card-body">
+                            <form name="form1">
+                                <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                    </div>
+                                    <input type="email" class="form-control" placeholder="E-mail" id="email_rec">
+                                    <button type="button" value="Entrar" class="btn float-right login_btn" id="botaoVerificar">Verificar</button>
+                                </div>
+                                <div class="senhas" id="senhas">
+                                    <div class="input-group form-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                        </div>
+                                        <input type="password" class="form-control" placeholder="Nova senha" id="senha_rec">
+                                    </div>
+                                    <div class="input-group form-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                        </div>
+                                        <input type="password" class="form-control" placeholder="Confirme a nova senha" id="senhac_rec">
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="button" value="Entrar" class="btn float-right login_btn" id="botaoTrocar">Confirmar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-center links">
+                                <p>Não tem uma conta? <a id="botaoCriar3" href="#">Criar</a></p>
+                            </div>
+                            <div class="d-flex justify-content-center links">
+                                <p>Já possui uma conta? <a id="botaoEntrar3" href="#">Entrar</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container1" id="containerCadastro">
+                <div class="row" >
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="usuario-conteudo">
+                            <h1>Cadastre-se</h1>
+                            <form name="form1" method="get" action="" class="formulario">
+                                <div class="cadastro">
+                                    <div class="dados">
+                                        <div class="dados1">
+                                            <div class="form-group">
+                                                <label for="nome">Nome</label>
+                                                <input type="text" class="form-control" id="nome" placeholder="Nome do usuário" maxlength="50" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">Email</label>
+                                                <input type="email" class="form-control" id="email" placeholder="Informe seu email" maxlength="50" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="senha">Senha</label>
+                                                <input type="password" class="form-control" id="senha" placeholder="Informe uma senha" maxlength="10" required>
+                                            </div>
+                                        </div>
+                                        <div class="dados2">
+                                            <div class="form-group">
+                                                <label for="c_senha">Confirme a Senha</label>
+                                                <input type="password" class="form-control" id="c_senha" placeholder="Confirme a senha" maxlength="10" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="rg">RG</label>
+                                                <input type="text" class="form-control" id="rg" placeholder="Informe seu RG" maxlength="9" required>
+                                            </div>
+                                            <label for="cep">CEP</label>
+                                            <div class="form-group" id="cepe">
+                                                <input  type="text" class="form-control" name="cep" id="cep" value="" minlength="9" maxlength="9" required>
+                                                <button type="button" class="btn btn-primary" id="btnok" name="btnok">OK</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="endereco">
+                                        <div class="endereco1">
+                                            <div class="form-group">
+                                                <label for="rua">Rua</label>
+                                                <input name="rua" type="text" class="form-control" id="rua" size="60" readonly>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="bairro">Bairro</label>
+                                                <input name="bairro" type="text" class="form-control" id="bairro" size="40" readonly>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="cidade">Cidade</label>
+                                                <input name="cidade" type="text" class="form-control" minlength="3" id="cidade"  size="40" readonly required >
+                                            </div>
+                                        </div>
+                                        <div class="endereco2">
+                                            <div class="form-group">
+                                                <label for="uf">Estado</label>
+                                                <input name="uf" type="text" class="form-control" id="uf" size="2" readonly>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="numero">Número</label>
+                                                <input name="numero" type="text" class="form-control" id="num"  size="2" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="complemento">Complemento</label>
+                                                <input name="complemento" type="text" class="form-control" id="comp" size="2">
+                                            </div>
+                                            <button type="button" class="btn btn-primary" id="botaoCadastrar" name="btnc">Cadastrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="possuiConta">Já possui uma conta? <a id="botaoEntrar2" href="#">Entrar</a></p>
+                            </form> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Waves Container-->
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+        <!--Waves end-->
+    </div>
+    <!--Header ends-->
+    <!--Content starts-->
+    <div class="content flex">
+        <p><strong>Todos os direitos reservados ® </strong></p>
+    </div>
+    <!--Content ends-->
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="js/funcao.js"></script>
