@@ -1,16 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
 body {
   margin: 0;
 }
 
+h3{
+  font-family: 'Poppins', sans-serif;
+}
+
 h1 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   letter-spacing: 2px;
   font-size: 48px;
 }
 
+label, input, button, a {
+  font-family: 'Poppins', sans-serif;
+}
+
 p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
   letter-spacing: 1px;
   font-size: 14px;
   color: #333333;
@@ -19,7 +29,7 @@ p {
 .header {
   position: relative;
   text-align: center;
-  background: linear-gradient(60deg, #37139ac1 0%,#2b019fe7, #37139ac5 100%);
+  background: linear-gradient(60deg, rgb(16,160 , 250) 0%,rgb(16,160 , 250)  100%);
   color: black;
 }
 
