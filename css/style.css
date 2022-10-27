@@ -300,7 +300,9 @@ button {
 /*-- marker-end sidebar  navigation--*/
 
 .sea_icon a {
-     color: #8c8c8c !important;
+     color: white !important;
+     font-weight: bolder;
+     font-size: large;
 }
 
 .right_bottun {
@@ -346,7 +348,7 @@ button {
      padding-bottom: 45px;
      font-weight: bold;
      text-transform: none;
-     letter-spacing: 85px;
+     letter-spacing: 50px;
      text-align: center;
      margin-top: 5%;
 }
