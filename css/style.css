@@ -56,6 +56,13 @@ a {
      transition: all .3s ease-in-out;
 }
 
+.k{
+     color: white;
+}
+.k:hover{
+     color: yellow;
+}
+
 h1,
 h2,
 h3,
@@ -321,7 +328,7 @@ button {
 /** banner section **/
 
 .banner_main {
-     background: url(../images/starss.jpg);
+     background: url(../images/starss.png);
      padding: 310px 0px 0px 0px;
      background-size: 100% 100%;
      background-repeat: no-repeat;
@@ -341,6 +348,7 @@ button {
      text-transform: none;
      letter-spacing: 85px;
      text-align: center;
+     margin-top: 5%;
 }
 
 .text-bg span {
@@ -418,7 +426,7 @@ button {
 
 .titlepage h2 {
      font-size: 40px;
-     color: #2a2a2c;
+     color: rgb(16,160 , 250);
      line-height: 45px;
      font-weight: bold;
      padding: 0;
@@ -507,7 +515,7 @@ button {
 /** software section **/
 
 .software {
-     background-color: #240082;
+     background-color: rgb(16,160 , 250);
      margin-top: 90px;
 }
 
@@ -574,7 +582,7 @@ button {
 .we_do .we_box {
      padding: 30px 30px 60px 30px;
      text-align: center;
-     border: #37139a solid 1px;
+     border: rgb(16,160 , 250) solid 1px;
      border-radius: 10px;
      transition: ease-in all 0.5s;
      margin-bottom: 30px;
@@ -585,7 +593,7 @@ button {
      font-weight: bold;
      font-size: 30px;
      color: #000000;
-     border: rgb(55, 19, 154) solid 2px;
+     border: rgb(16,160 , 250)(55, 19, 154) solid 2px;
      width: 65px;
      height: 65px;
      display: block;
@@ -613,12 +621,12 @@ button {
 }
 
 #hover_color:hover.we_box {
-     background-color: #37139a;
+     background-color: rgb(16,160 , 250);
      transition: ease-in all 0.5s;
 }
 
 #hover_color:hover.we_box span {
-     color: #37139a;
+     color: rgb(16,160 , 250);
      transition: ease-in all 0.5s;
 }
 
@@ -636,7 +644,7 @@ button {
      margin-top: 40px !important;
      margin: 0 auto;
      display: block;
-     background-color: #070101;
+     background-color: rgb(16,160 , 250);
      color: #fff;
 }
 
@@ -651,7 +659,7 @@ button {
 /** Our  team section **/
 
 .team {
-     background: #37139a;
+     background: rgb(215, 221, 236);
      margin-top: 90px;
      padding: 90px 0 60px 0;
 }
@@ -662,7 +670,7 @@ button {
 }
 
 .team .titlepage h2 {
-     color: #fff;
+     color: rgb(16,160 , 250);
 }
 
 .team .titlepage p {
@@ -670,7 +678,7 @@ button {
      line-height: 30px;
      font-weight: 400;
      padding-top: 10px;
-     color: #fff;
+     color: rgb(16,160 , 250);
 }
 
 .team .team_box {
@@ -691,7 +699,7 @@ button {
 }
 
 .team .social_box h3 {
-     color: #37139a;
+     color: rgb(16,160 , 250);
      font-size: 17px;
      line-height: 20px;
      padding: 12px 0px 9px 0px;
@@ -715,7 +723,7 @@ ul.social_team li a {
      font-size: 25px;
      border-radius: 60px;
      margin: 0 15px;
-     color: #37139a;
+     color: rgb(16,160 , 250);
 }
 
 
@@ -742,7 +750,7 @@ ul.social_team li a {
 }
 
 .con_bg {
-     background-color: #37139a;
+     background-color: rgb(16,160 , 250);
 }
 
 .padding_right2 {
@@ -756,7 +764,7 @@ ul.social_team li a {
 
 .main_form {
      margin-top: 70px;
-     font-family: 'Roboto', sans-serif;
+     font-family: 'Poppins', sans-serif;
      max-width: 553px;
      width: 100%;
      float: right;
@@ -895,7 +903,7 @@ ul.location_form li a {
 }
 
 .blu {
-     color: #37139a;
+     color: rgb(16,160 , 250);
      text-transform: initial;
      float: left;
 }
@@ -920,7 +928,7 @@ ul.location_form li a {
      width: 45px;
      height: 12px;
      border-radius: 20px;
-     background: #37139a;
+     background: rgb(16,160 , 250);
 }
 
 #myCarousel .carousel-indicators .active {
@@ -948,14 +956,14 @@ ul.location_form li a {
 .footer h3 {
      color: #fff;
      font-size: 40px;
-     font-family: 'Noto Serif', serif;
+     font-family: 'Poppins', sans-serif;
      line-height: 40px;
      text-align: left;
      padding-bottom: 20px;
 }
 
 .footer p {
-     font-family: 'Open Sans', sans-serif;
+     font-family: 'Poppins', sans-serif;
      color: #fff;
      font-size: 17px;
      line-height: 28px;
@@ -964,7 +972,7 @@ ul.location_form li a {
 }
 
 ul.location_icon {
-     font-family: 'Open Sans', sans-serif;
+     font-family: 'Poppins', sans-serif;
      text-align: center;
 }
 
@@ -991,7 +999,7 @@ ul.location_icon li a {
 }
 
 .news_form .letter_form {
-     font-family: 'Open Sans', sans-serif;
+     font-family: 'Poppins', sans-serif;
      height: 45px;
      width: 46%;
      padding: 0 13px;
@@ -1003,12 +1011,12 @@ ul.location_icon li a {
      padding: 7px 15px;
      margin-left: -4px;
      font-size: 18px;
-     background: #37139a;
+     background: rgb(16,160 , 250);
      color: #fff;
 }
 
 .news_form .sumbit:hover {
-     background-color: #000;
+     background-color: #fcc10e;
 }
 
 ul.social_icon {
@@ -1036,7 +1044,7 @@ ul.social_icon li a {
 }
 
 ul.social_icon li a:hover {
-     background-color: #37139a;
+     background-color: rgb(16,160 , 250);
 }
 
 .copyright {
@@ -1060,7 +1068,7 @@ ul.social_icon li a:hover {
 }
 
 .copyright a:hover {
-     color: #37139a;
+     color: rgb(16,160 , 250);
 }
 
 

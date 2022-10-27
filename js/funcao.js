@@ -1,8 +1,4 @@
-vemail = ["admin"]
-vsenha = ["admin"]
-vnome = ["admin"]
-vsenhac = ["admin"]
-vrg = ["000000000"]
+vcadastro = [{ vnome: "admin", vemail: "admin", vsenha: "admin", vsenhac: "admin", vrg: "000000000" }]
 
 botaoCadastrar = document.getElementById("botaoCadastrar")
 botaoCadastrar.onclick = function () {
@@ -22,16 +18,13 @@ botaoCadastrar.onclick = function () {
         senha = document.getElementById("senha").value
         senhac = document.getElementById("c_senha").value
         rg = document.getElementById("rg").value
-        vnome.push(nome)
-        vemail.push(email)
-        vsenha.push(senha)
-        vsenhac.push(senhac)
-        vrg.push(rg)
-        console.log(vemail)
-        console.log(vsenha)
-        console.log(vnome)
-        console.log(vsenhac)
-        console.log(vrg)
+
+        vcadastro.push({ vnome: nome, vemail: email, vsenha: senha, vsenhac: senhac, vrg: rg })
+
+        for (i = 0; i < vcadastro.length; i++) {
+            console.log(vcadastro[i].vnome, vcadastro[i].vemail)
+        }
+
         LimparForm()
         document.getElementById("containerCadastro").style.display = "none";
         document.getElementById("containerLogin").style.display = "block";
@@ -52,7 +45,7 @@ function LimparForm() {
     document.getElementById('uf').value = "";
     document.getElementById('num').value = "";
     document.getElementById('comp').value = "";
-    alert('Você foi cadastrado com sucesso, realize login para continuar')
+    alert('Você foi cadastrado com sucesso, realize o login para continuar.')
 }
 
 //API DO CEP
@@ -121,7 +114,7 @@ botaook.onclick = function pesquisacep() {
     else {
         alert("Preencha o campo CEP corretamente.")
     }
-};
+}
 
 masccep = document.querySelector('#cep')
 masccep.onkeypress = function (e) {
@@ -134,16 +127,26 @@ masccep.onkeypress = function (e) {
 
 botaoEntrar = document.getElementById("botaoEntrar")
 botaoEntrar.onclick = function () {
-    for (var i = 0; i < vemail.length; i++) {
-        if (vemail[i] == document.getElementById("email_login").value && vsenha[i] == document.getElementById("senha_login").value) {
-            alert("Login efetuado com sucesso. Seja bem vindo(a)!")
+
+    for (var i = 0; i < vcadastro.length; i++) {
+        if (vcadastro[i].vemail == document.getElementById("email_login").value && vcadastro[i].vsenha == document.getElementById("senha_login").value) {
+            result = 1
             break
         }
+        else if (document.getElementById("email_login").value == "" || document.getElementById("senha_login").value == "") {
+            result = 2
+        }
+        else if (vcadastro[i].vemail != document.getElementById("email_login").value || vcadastro[i].vsenha != document.getElementById("senha_login").value) {
+            result = 3
+        }
     }
-    if (document.getElementById("email_login").value == "" || document.getElementById("senha_login").value == "") {
+    if (result == 1) {
+        alert("Login efetuado com sucesso. Seja bem vindo(a)!")
+    }
+    else if (result == 2) {
         alert("Preencha os campos corretamente.")
     }
-    else if (vemail[i] != document.getElementById("email_login").value && vsenha[i] != document.getElementById("senha_login").value) {
+    else {
         alert("Usuário e/ou senha incorretos.")
     }
 }
@@ -184,16 +187,26 @@ botaoCriar3.onclick = function () {
 
 botaoVerificar = document.getElementById("botaoVerificar")
 botaoVerificar.onclick = function () {
-    for (i = 0; i < vemail.length; i++) {
-        if (vemail[i] == document.getElementById("email_rec").value) {
-            document.getElementById("senhas").style.display = "block"
-            vemail.splice(i, 1)
-            vsenha.splice(i, 1)
-            vsenhac.splice(i, 1)
-            console.log(vemail)
-            console.log(vsenha)
-            console.log(vsenhac)
+    for (i = 0; i < vcadastro.length; i++) {
+        if (vcadastro[i].vemail == document.getElementById("email_rec").value) {
+            result2 = 1
+            break
         }
+        else if (document.getElementById("email_rec").value == "") {
+            result2 = 2
+        }
+        else if (vcadastro[i].vemail != document.getElementById("email_rec").value) {
+            result2 = 3
+        }
+    }
+    if (result2 == 1) {
+        document.getElementById("senhas").style.display = "block"
+    }
+    else if (result2 == 2) {
+        alert("Preencha os campos corretamente.")
+    }
+    else if (result2 == 3) {
+        alert("Conta inexistente.")
     }
 }
 
@@ -211,14 +224,18 @@ botaoTrocar.onclick = function () {
         email_rec = document.getElementById("email_rec").value
         senha_rec = document.getElementById("senha_rec").value
         senhac_rec = document.getElementById("senhac_rec").value
-        vemail.push(email_rec)
-        vsenha.push(senha_rec)
-        vsenhac.push(senhac_rec)
-        console.log(vemail)
-        console.log(vsenha)
-        console.log(vnome)
-        console.log(vsenhac)
-        console.log(vrg)
+
+        for (i = 0; i < vcadastro.length; i++) {
+            vcadastro.splice(i, 1)
+        }
+
+        vcadastro.push({ vnome: nome, vemail: email_rec, vsenha: senha_rec, vsenhac: senhac_rec, vrg: rg })
+
+        // console
+        for (i = 0; i < vcadastro.length; i++) {
+            console.log(vcadastro[i].vemail, vcadastro[i].vsenha)
+        }
+
         alert("Senha trocada com sucesso.")
         document.getElementById("email_rec").value = "";
         document.getElementById("senha_rec").value = "";
