@@ -147,7 +147,7 @@ botaoEntrar.onclick = function () {
     else if (result == 2) {
         alert("Preencha os campos corretamente.")
     }
-    else {
+    else if (result == 3){
         alert("Usuário e/ou senha incorretos.")
     }
 }

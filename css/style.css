@@ -56,10 +56,11 @@ a {
      transition: all .3s ease-in-out;
 }
 
-.k{
+.k {
      color: white;
 }
-.k:hover{
+
+.k:hover {
      color: yellow;
 }
 
@@ -118,7 +119,7 @@ h4 a,
 h5 a,
 h6 a {
      color: #212121;
-     text-decoration: none!important;
+     text-decoration: none !important;
      opacity: 1
 }
 
@@ -163,7 +164,7 @@ img {
      height: auto;
 }
 
- :focus {
+:focus {
      outline: 0;
 }
 
@@ -320,10 +321,16 @@ button {
 .logo {
      text-align: center;
      margin-top: -33px !important;
-     border: #fff solid 2px;
      max-width: 200px;
-     padding: 15px 0 28px 0;
+     padding: 10px 0 10px 0;
      margin: 0 auto;
+     transition: 0.5s;
+}
+
+.logo:hover{
+     background-color: rgb(255, 255, 255, 0.5);
+     border-radius: 10px;
+     transition: 0.5s;
 }
 
 
@@ -428,7 +435,7 @@ button {
 
 .titlepage h2 {
      font-size: 40px;
-     color: rgb(16,160 , 250);
+     color: rgb(16, 160, 250);
      line-height: 45px;
      font-weight: bold;
      padding: 0;
@@ -517,7 +524,7 @@ button {
 /** software section **/
 
 .software {
-     background-color: rgb(16,160 , 250);
+     background-color: rgb(16, 160, 250);
      margin-top: 90px;
 }
 
@@ -584,7 +591,7 @@ button {
 .we_do .we_box {
      padding: 30px 30px 60px 30px;
      text-align: center;
-     border: rgb(16,160 , 250) solid 1px;
+     border: rgb(16, 160, 250) solid 1px;
      border-radius: 10px;
      transition: ease-in all 0.5s;
      margin-bottom: 30px;
@@ -595,7 +602,7 @@ button {
      font-weight: bold;
      font-size: 30px;
      color: #000000;
-     border: rgb(16,160 , 250)(55, 19, 154) solid 2px;
+     border: rgb(16, 160, 250)(55, 19, 154) solid 2px;
      width: 65px;
      height: 65px;
      display: block;
@@ -623,12 +630,12 @@ button {
 }
 
 #hover_color:hover.we_box {
-     background-color: rgb(16,160 , 250);
+     background-color: rgb(16, 160, 250);
      transition: ease-in all 0.5s;
 }
 
 #hover_color:hover.we_box span {
-     color: rgb(16,160 , 250);
+     color: rgb(16, 160, 250);
      transition: ease-in all 0.5s;
 }
 
@@ -646,7 +653,7 @@ button {
      margin-top: 40px !important;
      margin: 0 auto;
      display: block;
-     background-color: rgb(16,160 , 250);
+     background-color: rgb(16, 160, 250);
      color: #fff;
 }
 
@@ -661,7 +668,7 @@ button {
 /** Our  team section **/
 
 .team {
-     background: rgb(215, 221, 236);
+     background: rgb(16, 160, 250);
      margin-top: 90px;
      padding: 90px 0 60px 0;
 }
@@ -672,7 +679,7 @@ button {
 }
 
 .team .titlepage h2 {
-     color: rgb(16,160 , 250);
+     color: rgb(255, 255, 255);
 }
 
 .team .titlepage p {
@@ -680,7 +687,7 @@ button {
      line-height: 30px;
      font-weight: 400;
      padding-top: 10px;
-     color: rgb(16,160 , 250);
+     color: rgb(255, 255, 255);
 }
 
 .team .team_box {
@@ -690,6 +697,8 @@ button {
 
 .team .team_box figure {
      margin: 0;
+     border: solid;
+     border-color: rgb(16, 160, 250);
 }
 
 .social_box {
@@ -698,10 +707,12 @@ button {
      z-index: 999;
      position: relative;
      padding: 23px 0;
+     border: solid;
+     border-color: rgb(16, 160, 250);
 }
 
 .team .social_box h3 {
-     color: rgb(16,160 , 250);
+     color: rgb(16, 160, 250);
      font-size: 17px;
      line-height: 20px;
      padding: 12px 0px 9px 0px;
@@ -725,7 +736,16 @@ ul.social_team li a {
      font-size: 25px;
      border-radius: 60px;
      margin: 0 15px;
-     color: rgb(16,160 , 250);
+     color: rgb(16, 160, 250);
+}
+
+#row-team{
+     display: flex;
+     justify-content: center;
+}
+
+#teams{
+     margin: 2%;
 }
 
 
@@ -752,7 +772,7 @@ ul.social_team li a {
 }
 
 .con_bg {
-     background-color: rgb(16,160 , 250);
+     background-color: rgb(16, 160, 250);
 }
 
 .padding_right2 {
@@ -905,7 +925,7 @@ ul.location_form li a {
 }
 
 .blu {
-     color: rgb(16,160 , 250);
+     color: rgb(16, 160, 250);
      text-transform: initial;
      float: left;
 }
@@ -930,7 +950,7 @@ ul.location_form li a {
      width: 45px;
      height: 12px;
      border-radius: 20px;
-     background: rgb(16,160 , 250);
+     background: rgb(16, 160, 250);
 }
 
 #myCarousel .carousel-indicators .active {
@@ -1013,7 +1033,7 @@ ul.location_icon li a {
      padding: 7px 15px;
      margin-left: -4px;
      font-size: 18px;
-     background: rgb(16,160 , 250);
+     background: rgb(16, 160, 250);
      color: #fff;
 }
 
@@ -1046,7 +1066,7 @@ ul.social_icon li a {
 }
 
 ul.social_icon li a:hover {
-     background-color: rgb(16,160 , 250);
+     background-color: rgb(16, 160, 250);
 }
 
 .copyright {
@@ -1070,10 +1090,8 @@ ul.social_icon li a:hover {
 }
 
 .copyright a:hover {
-     color: rgb(16,160 , 250);
+     color: rgb(16, 160, 250);
 }
 
 
 /** end footer **/
-
-
