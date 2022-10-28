@@ -141,7 +141,8 @@ botaoEntrar.onclick = function () {
         }
     }
     if (result == 1) {
-        alert("Login efetuado com sucesso. Seja bem vindo(a)!")
+        alert("Login efetuado com sucesso. Seja bem vindo(a) à lista de espera!")
+        window.location.replace("avaliacao.html")
     }
     else if (result == 2) {
         alert("Preencha os campos corretamente.")
